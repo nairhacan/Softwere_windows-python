@@ -24,5 +24,5 @@ Masih dalam tahap eksplorasi dan pengembangan. Cocok untuk kamu yang ingin belaj
 
 ---
 
-> Dibuat dengan semangat belajar oleh **Kina`SaQina (a.k.a. Nairha)**  
+> Dibuat dengan semangat belajar oleh **Kina`SaQina**  
 > Untuk bertanya, berdiskusi, atau menyumbang ide: silakan open issue atau hubungi saya via GitHub
