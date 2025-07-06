@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Safari - Scratch Game Concept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .scratch-block {
+            font-family: 'Courier New', monospace;
+            background-color: #4d97ff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin: 4px;
+            display: inline-block;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .scratch-condition {
+            background-color: #ffab19;
+        }
+        .scratch-loop {
+            background-color: #ff8c1a;
+        }
+        .scratch-event {
+            background-color: #ffd500;
+            color: black;
+        }
+        .scratch-motion {
+            background-color: #4cbfe6;
+        }
+        .scratch-variable {
+            background-color: #ff8c1a;
+        }
+        .scratch-sensing {
+            background-color: #5cb1d6;
+        }
+        .scratch-looks {
+            background-color: #9966ff;
+        }
+        .scratch-sound {
+            background-color: #cf63cf;
+        }
+        .scratch-operator {
+            background-color: #5cb1d6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+        <h1 class="text-3xl font-bold text-center mb-6 text-orange-600">Jumping Safari - Scratch Game Concept</h1>
+        
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Game Overview</h2>
+            <p class="mb-4">A jumping game where the player controls a safari animal (like a kangaroo or gazelle) that must jump over obstacles while answering animal classification questions.</p>
+            <div class="flex justify-center mb-6">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0eb1892f-8da7-49bf-b25d-935e303cb558.png" alt="Game screenshot concept showing a safari animal jumping over obstacles with a score counter and question popup" class="rounded-lg border border-gray-300" />
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Sprites</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-medium mb-2">Player Sprite</h3>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/31f7ec2f-ed5f-4358-b41e-f0f582605402.png" alt="Cartoon kangaroo sprite with jumping animation frames" class="mb-2 rounded" />
+                    <p>Main character with jumping animation</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-medium mb-2">Obstacles</h3>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7f94d113-3b82-41a2-9ec8-05c160a2535f.png" alt="Various safari obstacles like logs, rocks, and bushes" class="mb-2 rounded" />
+                    <p>Standard obstacles to jump over</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-medium mb-2">Animal Quiz Sprites</h3>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f93890f7-8021-4e69-9274-fd7d7cea99b2.png" alt="Different animal sprites that appear every 100 points" class="mb-2 rounded" />
+                    <p>Appear every 100 points to ask questions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Background</h2>
+            <div class="flex justify-center">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/65600643-a7f9-4a60-b0c2-d8ce850965b3.png" alt="Safari landscape background with savanna, trees, and distant mountains" class="rounded-lg border border-gray-300" />
+            </div>
+            <p class="mt-2 text-center">Scrolling safari background that moves as the player progresses</p>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Game Mechanics</h2>
+            
+            <div class="mb-6">
+                <h3 class="font-medium mb-2 text-blue-600">1. Main Game Loop</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="scratch-event">when green flag clicked</div>
+                    <div class="scratch-variable">set [score] to [0]</div>
+                    <div class="scratch-looks">switch backdrop to [Safari Background]</div>
+                    <div class="scratch-sound">play sound [Game Start] until done</div>
+                    <div class="scratch-loop">forever</div>
+                    <div class="ml-8">
+                        <div class="scratch-motion">move obstacles left</div>
+                        <div class="scratch-condition">if <touching [Obstacle]> then</div>
+                        <div class="ml-8 scratch-sound">play sound [Crash]</div>
+                        <div class="ml-8 scratch-looks">switch backdrop to [Game Over]</div>
+                        <div class="ml-8 scratch-sound">play sound [Game Over] until done</div>
+                        <div class="ml-8 scratch-loop">stop [all]</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-medium mb-2 text-blue-600">2. Jumping Mechanism</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="scratch-event">when [space] key pressed</div>
+                    <div class="scratch-condition">if <not <touching [Obstacle]>> then</div>
+                    <div class="ml-8 scratch-sound">play sound [Jump]</div>
+                    <div class="ml-8 scratch-motion">change y by (20)</div>
+                    <div class="ml-8 scratch-motion">glide (0.5) secs to x: (x position) y: (0)</div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-medium mb-2 text-blue-600">3. Scoring System</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="scratch-event">when green flag clicked</div>
+                    <div class="scratch-loop">forever</div>
+                    <div class="ml-8 scratch-condition">if <[Obstacle] reaches left edge> then</div>
+                    <div class="ml-16 scratch-variable">change [score] by (10)</div>
+                    <div class="ml-16 scratch-condition">if <(score) mod (100) = 0> then</div>
+                    <div class="ml-24 scratch-looks">create clone of [Animal Quiz Sprite]</div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-medium mb-2 text-blue-600">4. Quiz Animal Mechanics</h3>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <div class="scratch-event">when I start as a clone</div>
+                    <div class="scratch-motion">go to x: (240) y: (pick random -100 to 100)</div>
+                    <div class="scratch-looks">show</div>
+                    <div class="scratch-loop">repeat until <touching [Player]></div>
+                    <div class="ml-8 scratch-motion">move (-5) steps</div>
+                    <div class="scratch-condition">if <touching [Player]> then</div>
+                    <div class="ml-8 scratch-looks">ask [Is this animal a carnivore, herbivore, or omnivore?] and wait</div>
+                    <div class="ml-8 scratch-condition">if <not <(answer) = [correct answer]>> then</div>
+                    <div class="ml-16 scratch-variable">change [score] by (-50)</div>
+                    <div class="ml-16 scratch-sound">play sound [Wrong Answer]</div>
+                    <div class="ml-8 scratch-sound">play sound [Correct Answer]</div>
+                    <div class="ml-8 scratch-looks">delete this clone</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Variables</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-medium">score</h3>
+                    <p>Tracks player's current score</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-medium">highscore</h3>
+                    <p>Stores the highest score achieved</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg">
+                    <h3 class="font-medium">speed</h3>
+                    <p>Controls obstacle movement speed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Sounds</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><span class="font-medium">Jump:</span> Boing sound effect</li>
+                <li><span class="font-medium">Crash:</span> Collision sound</li>
+                <li><span class="font-medium">Game Start:</span> Safari-themed music</li>
+                <li><span class="font-medium">Game Over:</span> Sad trombone</li>
+                <li><span class="font-medium">Correct Answer:</span> Cheerful chime</li>
+                <li><span class="font-medium">Wrong Answer:</span> Buzzer sound</li>
+            </ul>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Game Flow</h2>
+            <ol class="list-decimal pl-5 space-y-2">
+                <li>Player clicks green flag to start</li>
+                <li>Obstacles start moving from right to left</li>
+                <li>Player presses spacebar to jump over obstacles</li>
+                <li>Each successful obstacle pass adds 10 points</li>
+                <li>Every 100 points, a quiz animal appears</li>
+                <li>If player touches quiz animal, they must answer a question</li>
+                <li>Wrong answers deduct 50 points</li>
+                <li>Game ends when player hits an obstacle</li>
+                <li>High score is displayed on game over screen</li>
+            </ol>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4 text-green-700">Sample Quiz Questions</h2>
+            <div class="bg-blue-50 p-4 rounded-lg">
+                <div class="mb-4">
+                    <p class="font-medium">Animal: Lion</p>
+                    <p>Question: Is a lion a carnivore, herbivore, or omnivore?</p>
+                    <p>Correct Answer: carnivore</p>
+                </div>
+                <div class="mb-4">
+                    <p class="font-medium">Animal: Elephant</p>
+                    <p>Question: Is an elephant a mammal, amphibian, or reptile?</p>
+                    <p>Correct Answer: mammal</p>
+                </div>
+                <div>
+                    <p class="font-medium">Animal: Frog</p>
+                    <p>Question: Is a frog a mammal, amphibian, or bird?</p>
+                    <p>Correct Answer: amphibian</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full text-lg transition duration-200">
+                Play Jumping Safari
+            </button>
+        </div>
+    </div>
+</body>
+</html>

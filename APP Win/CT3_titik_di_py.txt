@@ -1,0 +1,41 @@
+jika menemukan titik pada setiap syntkas seperti 
+    //  aplikasi.title("Halo")  //
+
+✔️ Jawaban singkat:
+Titik (.) di Python dipakai untuk mengakses sesuatu yang ada di dalam objek, seperti:
+Fungsi (disebut method)
+Nilai/data (disebut attribute)
+
+
+ 🔎Gampangnya gini:
+Misalnya kamu punya objek:
+    // aplikasi = aps.Tk()  //
+Nah, aplikasi itu adalah objek dari class Tk.
+Di dalam class Tk ada banyak method dan atribut.
+
+contoh nya
+
+| Yang kamu tulis          | Artinya                                         |
+| ------------------------ | ----------------------------------------------- |
+| `aplikasi.title(...)`    | Panggil fungsi `title()` milik objek `aplikasi` |
+| `aplikasi.geometry(...)` | Panggil fungsi `geometry()` dari `aplikasi`     |
+| `aplikasi.mainloop()`    | Jalankan loop utama milik `aplikasi`            |
+| `label.config(...)`      | Atur ulang properti dari `label`                |
+
+
+🤔 Ibarat:
+Kalau aplikasi itu kayak motor,
+maka aplikasi.start(), aplikasi.gas(), aplikasi.rem()
+itu kayak tombol-tombol atau fungsi yang ada di motor itu.
+
+Titik . adalah cara kita bilang:
+
+"Aku mau pakai bagian dari si objek ini."
+
+Kalau kamu penasaran nanti, semua object-object di Python kayak string, list, bahkan angka juga bisa punya titik, misal:
+//
+
+nama = "nairha"
+print(nama.upper())   # <- panggil method .upper() dari string
+
+//

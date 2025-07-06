@@ -1,0 +1,14 @@
+Tkinter adalah library standar Python untuk membuat antarmuka grafis pengguna (GUI). 
+Dengan Tkinter, kamu bisa membuat jendela aplikasi, tombol, label, kotak teks, dan 
+elemen GUI lainnya dengan mudah. Tkinter sudah terintegrasi di sebagian besar instalasi Python, 
+sehingga tidak perlu instalasi tambahan.
+
+Contoh sederhana penggunaan Tkinter:
+
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Contoh Tkinter")
+label = tk.Label(root, text="Halo, Tkinter!")
+label.pack()
+root.mainloop()

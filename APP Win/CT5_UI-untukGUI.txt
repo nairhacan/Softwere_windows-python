@@ -1,0 +1,31 @@
+
+🔸 Tampilan GUI di Python vs HTML+CSS
+
+
+| Fitur                     | HTML + CSS                       | Python + Tkinter                                         |
+| ------------------------- | -------------------------------- | -------------------------------------------------------- |
+| Struktur UI               | `<div>`, `<nav>`, `<section>`    | `Frame`, `Label`, `Entry`, `Button`, dll                 |
+| Desain warna, font, style | CSS powerful (`.class`, `hover`) | Basic: `bg=`, `fg=`, `font=`, `padx=`, dll               |
+| Layout                    | Flexbox, Grid, Positioning       | `pack()`, `grid()`, `place()`                            |
+| Dropdown / Navbar         | Bisa pakai `<select>` + JS       | Ada `Menu`, `Combobox`, `Frame`                          |
+| Interaktif & animasi      | Bisa pakai CSS + JavaScript      | **Terbatas**, animasi harus manual (atau pakai lib lain) |
+| Responsive Design         | Sangat fleksibel                 | Sulit, kecuali atur pakai logika resize                  |
+
+
+
+🔹 Tapi… Ada Alternatif Keren Buat Tampilan Python:
+Tkinter
+✔️ Ringan, cocok buat belajar
+❌ Tampilan klasik (jadul), terbatas
+
+CustomTkinter
+✔️ Desain lebih modern (dark mode, button halus, input elegan)
+❌ Perlu install modul tambahan
+
+PyQt5 / PySide6
+✔️ UI sangat keren seperti aplikasi desktop modern
+❌ Agak berat, lebih kompleks dari Tkinter
+
+Kivy
+✔️ Bisa bikin app mobile + desain fleksibel
+❌ Agak beda cara kerja dengan Tkinter

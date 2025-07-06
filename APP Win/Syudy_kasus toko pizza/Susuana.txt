@@ -1,0 +1,37 @@
+
+
+🎯 Studi Kasus: Aplikasi Toko Pizza
+🔶 Tahap 1 – Dasar GUI
+ Bikin jendela aplikasi
+
+ Judul dan ukuran jendela
+
+🔶 Tahap 2 – Formulir Pemesanan
+ Input nama pelanggan (Entry)
+
+ Pilihan ukuran pizza: Kecil, Sedang, Besar (Radiobutton)
+
+ Pilihan topping (bisa lebih dari 1): Keju, Daging, Jamur, dll (Checkbutton)
+
+ Input jumlah pizza (Spinbox)
+
+ Tombol "Pesan Sekarang" (Button)
+
+🔶 Tahap 3 – Proses dan Output
+ Ambil data dari semua input
+
+ Hitung total harga (pakai logika sederhana)
+
+ Tampilkan ringkasan pesanan (Label atau Text)
+
+🔶 Tahap 4 – Penyempurnaan
+ Desain UI: Warna, font, tata letak
+
+ Validasi input (misal: nama tidak boleh kosong)
+
+ Tombol reset formulir
+
+🔶 Tahap 5 – Persiapan Jadi Aplikasi Nyata
+ Simpan pesanan ke file .txt atau .csv
+
+ Ubah jadi file .exe (biar bisa dibagikan ke orang)

@@ -1,0 +1,22 @@
+🧰 Komponen (Widget) selain Entry di Tkinter:
+
+
+| Nama Widget   | Fungsinya                                      | Mirip di HTML                  |
+| ------------- | ---------------------------------------------- | ------------------------------ |
+| `Label`       | Menampilkan teks (bukan input)                 | `<p>`, `<h1>`                  |
+| `Button`      | Tombol untuk klik                              | `<button>`                     |
+| `Entry`       | Kotak input teks 1 baris                       | `<input type="text">`          |
+| `Text`        | Kotak input teks **banyak baris**              | `<textarea>`                   |
+| `Checkbutton` | Kotak centang                                  | `<input type="checkbox">`      |
+| `Radiobutton` | Pilihan satu dari beberapa opsi                | `<input type="radio">`         |
+| `Listbox`     | Daftar pilihan (bisa pilih item)               | `<select>`                     |
+| `Spinbox`     | Input angka naik-turun                         | `<input type="number">` + step |
+| `Scale`       | Slider nilai                                   | `<input type="range">`         |
+| `Combobox`\*  | Dropdown pilihan                               | `<select>`                     |
+| `Frame`       | Wadah/kotak untuk ngatur layout elemen lain    | `<div>`                        |
+| `Canvas`      | Untuk gambar, grafik, dan objek visual lainnya | `<canvas>`                     |
+| `Menu`        | Menu bar seperti File, Edit, dll               | Menu header                    |
+| `Message`     | Teks panjang seperti Label                     | Paragraf                       |
+
+
+/cek di File "4.macam_macam_from"

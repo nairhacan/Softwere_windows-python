@@ -1,0 +1,29 @@
+GUI singkatan dari:
+
+🎨 Graphical User Interface
+
+Artinya:
+
+Tampilan yang bisa di lihat, klik, geser, atau ketik — kayak jendela, tombol, input, menu, gambar, dll.
+
+| Jenis                              | Contoh                       | Cara Pakai                            |
+| ---------------------------------- | ---------------------------- | ------------------------------------- |
+| **CLI** (Command Line Interface)   | Terminal, CMD                | Ketik perintah                        |
+| **GUI** (Graphical User Interface) | Windows, Aplikasi Chat, Game | Klik tombol, geser slider, input teks |
+
+
+💡 Contoh Aplikasi GUI:
+Kalkulator di Windows
+Paint
+Notepad
+Game
+Aplikasi yang kamu buat pakai tkinter
+
+🔧 Di Python:
+Untuk bikin GUI, kita pakai modul seperti:
+tkinter (paling dasar, bawaan)
+PyQt (tampilan modern, lebih kompleks)
+Kivy (buat aplikasi HP juga)
+customtkinter (versi modern dari tkinter)
+Tapi sekarang kamu udah mulai pakai GUI yang paling ringan & aman buat pemula: tkinter ❤️
+

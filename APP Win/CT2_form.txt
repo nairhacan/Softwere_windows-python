@@ -1,0 +1,28 @@
+. 🔍 def Itu Apa?
+
+def singkatan dari define, artinya "mendefinisikan" atau "membuat" sebuah fungsi.
+Fungsi = sekumpulan kode yang bisa dijalankan kapan pun kamu panggil.
+
+Contoh :
+
+///////////////////////////////////////////
+def sapa():                                |
+    print("Hai Nairha!")                   |
+///////////////////////////////////////////
+
+
+sama seperti DI php yaitu Fuction misal jika di php
+
+///////////////////////////////////////
+function sapa() {                      |
+    echo "Halo, Nairha!";              |
+}                                      |
+                                       |
+sapa(); // Memanggil fungsi            |    
+///////////////////////////////////////
+
+maka output nya akan
+
+hallo Nairha
+
+
